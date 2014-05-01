@@ -15,31 +15,34 @@
 \begin{document}
 \begin{fmffile}{feynmandiags}
 
-\title{Higgs boson searches and Higgs decays to invisible final states at the Compact Muon Solenoid}
+\title{Searches for Higgs boson decays to invisible final states at the Compact Muon Solenoid}
 \author{Patrick Dunne \\ Supervisors: David Colling, Gavin Davies}
 \maketitle
 
 
 \renewcommand{\abstractname}{\vspace{-\baselineskip}}
 \begin{abstract}
-  An overview of searches for the Higgs boson at the Compact Muon Solenoid (CMS) at the Large Hadron Collider (LHC) is presented. A particular emphasis is placed on the methods of combining the various decay channels that are used and the search for invisible Higgs boson final states in the vector boson fusion (VBF) production channel.
+%!!REVIEW AT END
+  An overview of searches for invisible decays of Higgs bosons at the Compact Muon Solenoid (CMS) at the Large Hadron Collider (LHC) is presented. A particular emphasis is placed on the search for invisible Higgs boson final states in the vector boson fusion (VBF) production channel and the methods of combining the various decay channels that are used. By combining the results from all the search channels an observed (expected) upper limit on the invisible branching fraction of a 125 GeV Higgs boson of 0.58 (0.44) is placed at the 95\% confidence level, assuming standard model Higgs boson cross sections and acceptances.
 \end{abstract}
 
 
 \section{The Standard Model and the Higgs boson}
 \label{theory}
-
+%!!UPDATE POSSIBLY REMOVE
 The Standard Model (SM) of particle physics is one of the most successful physical theories devised, and one of its cornerstones is electroweak unification \cite{glashow,weinberg,salam}. Electroweak unification proposes that the Lagrangian has an SU(2)xU(1) symmetry and local gauge invariance with four gauge bosons, the photon ($\gamma$) and the $W$ and $Z$ bosons. The particles predicted by the theory, the $W$ and $Z$ bosons, were observed at the UA1 and UA2 experiments in 1983 \cite{wdiscovery,zdiscovery}, with masses of 80.4 GeV and 91.2 GeV, respectively. It was already known that massive exchange particles would be required to explain the short range of the weak force. Unfortunately the symmetry of the Lagrangian is ruined by vector boson mass terms, so a different mechanism is required to give mass to the particles we observe.
 
-The Higgs mechanism provides a solution to this problem by adding a complex scalar field with a non-zero vacuum expectation value, the Higgs field, to the Lagrangian that couples to the gauge bosons \cite{englertbrout,higgs1,higgs2,guralniketc,higgs3,kibble}. While the Lagrangian term itself respects the symmetry described above, the ground state does not; this is called spontaneous symmetry breaking. The gauge bosons coupling to a field with a vacuum expectation accounts for their mass, and we are left with the prediction of a new massive scalar boson, the Higgs boson. A candidate Higgs-like boson has recently been discovered by the ATLAS and CMS \cite{cmsdiscovery,atlasdiscovery} experiments at CERN.
+The Higgs mechanism provides a solution to this problem by adding a complex scalar field with a non-zero vacuum expectation value, the Higgs field, to the Lagrangian that couples to the gauge bosons \cite{englertbrout,higgs1,higgs2,guralniketc,higgs3,kibble}. While the Lagrangian term itself respects the symmetry described above, the ground state does not; this is called spontaneous symmetry breaking. The gauge bosons coupling to a field with a vacuum expectation accounts for their mass, and we are left with the prediction of a new massive scalar boson, the Higgs boson. A Higgs boson has recently been discovered by the ATLAS and CMS \cite{cmsdiscovery,atlasdiscovery} experiments at CERN.
 
-The Higgs mechanism can also explain the fermion masses by introducing a Yukawa coupling between the Higgs field and the fermions, the mass would be expected to be proportional to the strength of the coupling. Measuring the strength of the coupling between the Higgs-like boson that has been discovered at the LHC \cite{lhc} and the fermions will therefore be important in confirming whether it is a SM Higgs boson. It is important to note that the theory does not predict the particles' masses.
+However, despite all current measurements of the properties of this Higgs boson being consistent with the SM, the precision of these measurements is not sufficient to determine whether or not it is a SM Higgs boson. Furthermore, despite additional SM-like Higgs bosons being excluded across a wide mass range, exotically decaying Higgs bosons, predicted by many beyond the SM theories !!REFERENCE, are not ruled out. The motivation for searches for invisibly decaying Higgs bosons is therefore strong.
 
+
+%!!MAYBE REMOVE
 \begin{figure}
   \centering
-  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Higgs_XS_8TeV_lx.pdf}}
-  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{XSBR_8TeV_SM.pdf}}
-  \caption{Cross-section for SM Higgs boson production mechanisms is shown (left), $pp \rightarrow H$ is gluon fusion, $pp \rightarrow qqH$ is VBF and the remaining three are associated production with $W$, $Z$ and $t\bar{t}$. Also shown (right) are the branching fractions multiplied by the production cross-section for the decay modes of the SM Higgs boson. From \cite{lhchxswg}}.
+  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Images/Higgs_XS_8TeV_lx.pdf}}
+%  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Images/XSBR_8TeV_SM.pdf}}
+  \caption{The cross-section for SM Higgs boson production mechanisms is shown, $pp \rightarrow H$ is gluon fusion, $pp \rightarrow qqH$ is VBF and the remaining three are associated production with $W$, $Z$ and $t\bar{t}$. From \cite{lhchxswg}}.
   \label{higgbrfig}
 \end{figure}
 
@@ -118,31 +121,24 @@ The Higgs mechanism can also explain the fermion masses by introducing a Yukawa 
     \end{fmfgraph*}
     \caption{}
   \end{subfigure}
-  \caption{The Feynman diagrams for the Higgs production mechanisms at CMS are shown: a) gluon gluon fusion, b) vector boson fusion, c) $W$/$Z$ associated production and d) $t\bar{t}$ associated production.}
+  \caption{The Feynman diagrams for the Higgs production mechanisms at CMS are shown: a) gluon fusion, b) vector boson fusion, c) $W$/$Z$ associated production and d) $t\bar{t}$ associated production.}
   \label{higgprodfig}
 \end{figure}
 
-\section{Higgs production and decay mechanisms}
+\section{Search Channels}
 \label{proddec}
+%!!UPDATE TO REFOCUS ON ASSOCIATED PRODUCTION AND INVISIBLE
+As can be seen in Fig.~\ref{higgbrfig} the SM Higgs boson production mechanism with the highest cross-section at the LHC is gluon fusion which proceeds through a quark loop as shown in Fig.~\ref{higgprodfig}a. However, a gluon fusion produced Higgs boson that decayed invisibly would leave no signature in the detector. It is only channels where the Higgs is produced recoiling against a visible system where invisible searches can be carried out.
 
-As can be seen in Fig.~\ref{higgbrfig} the SM Higgs boson production mechanism with the highest cross-section at the LHC is gluon gluon fusion which proceeds through a quark loop as shown in Fig.~\ref{higgprodfig}a. Because the Higgs couples to mass this loop is dominated by the top quark contribution, although all strongly interacting massive particles are expected to contribute.
+After gluon fusion the next highest production cross-section is for vector boson fusion (VBF), which occurs through the Feynman diagram shown in Fig.~\ref{higgprodfig}b. VBF produced Higgs bosons recoil against two quarks, so this channel can be used for invisible searches, it also has the advantage that the two quarks are produced with a large pseudorapidity (defined in Sec. \ref{cmslhc}) gap between them, which can be used as a signature to trigger on \cite{zeppenfeld}.
 
-After gluon gluon fusion the next highest production cross-section is for vector boson fusion (VBF), which occurs through the Feynman diagram shown in Fig.~\ref{higgprodfig}b. VBF has the advantage that the two quarks in the final state are produced with a large pseudorapidity (defined in Sec. \ref{cmslhc}) gap between them, which can be used as a signature to trigger on \cite{zeppenfeld}.
+After VBF is associated production with a Z boson as shown in fig. \ref{higgprodfig}c, which can also be used for searches for invisible decays by studying the decay products of the Z boson. Furthermore, when the Z boson decays leptonically this channel has the advantage of providing a very clean signature with much lower backgrounds than VBF.
 
-Finally there is associated production, where the Higgs is produced along with other particles, predominantly $W$ or $Z$ bosons and $t\bar{t}$ pairs through the diagrams in figs. \ref{higgprodfig}c and \ref{higgprodfig}d. These channels are useful because the particles produced with the Higgs can be used for triggering, thus reducing backgrounds.
-
-As described above the Higgs boson couples proportionally to mass, so it would be expected that the dominant decays would be to heavy particles. At a mass around 125 GeV the heaviest particle that can be pair produced on-shell is the b quark. However, large QCD backgrounds make it impossible to perform a Higgs search in the $b\bar{b}$ channel unless the Higgs was created in associated production, when the associated particle can be used as a trigger, and the background is significantly reduced.
-
-As the mass increases decays to two $W$ or $Z$ bosons become increasingly important. It can be seen from Fig.~\ref{higgbrfig} that both the $WW$ and $ZZ$ channels have high branching ratios even at 125 GeV, because, even though two real bosons cannot be created, it is possible to produce one real and one virtual boson. When at least one of the bosons decays leptonically the lepton can be used to trigger allowing this search to be carried out for all of the production channels. The $ZZ$ channel is also particularly important because several of its final states allow full kinematic reconstruction giving it a very good mass resolution.
-
-The other channel with very good mass resolution is the decay to two photons ($\gamma\gamma$), which also has a final state that can be fully reconstructed and is easy to trigger on. The $\gamma\gamma$ decay proceeds through a similar loop diagram to gluon gluon fusion, but with the gluons replaced with photons and any massive charged particle in the loop. The $\gamma\gamma$ decay also has most sensitivity at low mass because at higher masses decays to $WW$, $ZZ$ and, at very high Higgs mass, $t\bar{t}$ are dominant. 
-
-The final channel that is being examined for the main Higgs search at CMS is the decay to two $\tau$ leptons. Fig.~\ref{higgbrfig} shows that this has a high branching ratio, however the fact that when the $\tau$ leptons decay neutrinos are produced with variable energies means that this channel does not have a good mass resolution. The signal of a decay to two $\tau$ leptons therefore manifests itself as a broad excess which is difficult to search for. Like the $\gamma\gamma$ channel the decay to $\tau$ leptons is also a channel with most sensitivity in the low mass region.
-
-Whilst the SM branching fraction is vanishingly small, there are also searches for Higgs decays to invisible final states because several beyond the SM models predict Higgs decays to long-lived neutral particles. Decays to invisible final states (``Higgs to invisible'') are studied in more detail in Sec. \ref{htoinv}
+Finally there is associated production, with a $t\bar{t}$ pair through the diagram in fig. \ref{higgprodfig}d. Despite the Higgs recoiling against the visible $t\bar{t}$ system the very low cross-section for this process makes it impossible to carry out a search for invisible decays in this channel with the currently available amounts of data.
 
 \section{CMS and the LHC}
 \label{cmslhc}
+%!!UPDATE POSSIBLY REMOVE, PUT ETA COVERAGES IN TABLE FOCUS ON SYSTEMS IMPORTANT FOR INV
 The LHC is a proton proton collider situated at CERN near Geneva with nominal centre of mass energy ($\sqrt{s}$) of 14 TeV. It ran in 2010 and 2011 at $\sqrt{s}$ = 7 TeV, and again in 2012 at $\sqrt{s}$ = 8 TeV. The CMS detector is one of the two general purpose detectors at the LHC, the other being ATLAS. From the inside out it comprises: a central silicon detector for vertex location and tracking, an electromagnetic calorimeter (ECAL), a hadronic calorimeter (HCAL), a superconducting magnet to bend particle tracks for momentum measurement and a muon system situated in the magnet return yoke\cite{cmstdr}.
 
 The co-ordinate system used by CMS is right-handed with the x-axis pointing to the centre of the LHC ring, the y-axis pointing vertically upwards and the z axis along the beam-line. The spherical polar co-ordinates $\theta$ and $\phi$ take their normal definitions. CMS also uses the pseudorapidity variable, $\eta$, which is defined as
@@ -169,8 +165,13 @@ To date an integrated luminosity of 5.6 fb$^{-1}$ has been recorded by CMS at $\
 For the 2012 run it was realised that whilst it is only possible to process events at a rate of 700 Hz an extra 1000 Hz could be stored to tape for later processing \cite{parkeddata}. This extra data is referred to as ``parked data'' and is of particular relevance to the Higgs to Invisible search discussed in Sec. \ref{htoinv}.
 
 
-\section{Higgs to invisible}
+\section{VBF Higgs to invisible}
 \label{htoinv}
+\subsection{Search Strategy}
+\subsection{Event Selection}
+\subsection{Background Estimation}
+\subsection{Results}
+%!!UPDATE OVERHAUL
 In several beyond the SM theories the Higgs boson is expected to have a significant branching ratio for decays to particles that would be invisible to the CMS detector \cite{higgworkgroup2001}. The basic idea is to observe these Higgs to invisible events by using the distinctive VBF Higgs production process topology to tag Higgs events and then searching for missing energy \cite{zeppenfeld}. The VBF channel has been shown to be the most sensitive production channel to decays to invisible final states; this is because of its high cross-section compared to the associated production channels and its more distinctive topology compared to gluon fusion \cite{bds}.
 
 In addition to the gap in pseudorapidity, jets produced in VBF processes are expected to be in opposite halves of the detector. Furthermore, QCD backgrounds can be significantly suppressed whilst retaining high signal efficiency by requiring a high dijet invariant mass \cite{zeppenfeld}. CMS has a dedicated trigger for this analysis which requires two jets and the following other conditions:
@@ -188,8 +189,35 @@ Remaining backgrounds are estimated from control regions which are $Z \to \mu\mu
 At present, analysis of the data from the 2012 LHC run is taking place, and it is envisaged that in the near future the analysis will be performed using the parked data discussed in Sec. \ref{cmslhc}. The triggers present in the parked data are less stringent, the $\slashed{E}_{T}$ threshold is lowered to 35 GeV, the $E_{T}$ threshold is lowered to 35 GeV and the $M_{jj}$ threshold is lowered to 700 GeV, which should result in fewer signal events being lost \cite{jimtalk}. More work is also required to investigate the possibility of vetoing events with jet activity in the central region, which would further reduce backgrounds.
 
 
-\section{Combination of Higgs boson decay channels}
+\section{Combination of search channels}
 \label{combs}
+%!!UPDATE TURN INTO INVISIBLE COMBINATION
+\begin{figure}
+  \centering
+  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Images/VBF-XSLimit.pdf}}
+  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Images/VBF-Limit.pdf}}
+  \caption{}%!!REDO CAPTION
+  \label{vbflimits}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Images/ZH-XSLimit.pdf}}
+  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Images/ZH-Limit.pdf}}
+  \caption{}%!!REDO CAPTION
+  \label{zhlimits}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Images/Combination-Limit.pdf}}
+  \raisebox{-0.5\height}{\includegraphics[width=0.49\textwidth]{Images/VBF-ZllH-HighMassLimit.pdf}}
+  \caption{}%!!REDO CAPTION
+  \label{combinedlimits}
+\end{figure}
+
+
+%!!SECTION NEW TO HERE
 In order to establish whether what has been found at CMS is an SM Higgs boson it is important to combine the results of the different searches and compare them with the SM predictions. In order to do this the errors, both statistical and systematic, on the various analyses and their correlations must be taken into account as well as each channel's results.
 
 The CMS combinations group compares the data to standard model predictions in three main ways: limits are placed on regions where we can exclude a standard model Higgs boson, excesses over background are characterised and signal model parameters are extracted and compared to their standard model values \cite{hcpcomb2012}. A general methodology for doing this has been developed by ATLAS and CMS which is described in refs. \cite{lhccomb1,comb2011} and described below are the methods used for performing the above three data to signal comparisons as they appear in ref. \cite{hcpcomb2012}.
@@ -236,13 +264,13 @@ An update of the result which also used an additional 6.9 fb$^{-1}$ of 8 TeV dat
 
 
 \section{Future work}
-My thesis will focus on searches for Higgs boson decays to invisible final states in the VBF channel, particularly how these results impact the combination of all the decay channels for determination of the overall parameters of the Higgs boson. I will begin by assisting with the combinations for the Moriond 2013 conference and the analysis of the 2012 data for the Higgs to invisible searches. I will then move on to using the parked data from 2012 for the Higgs to invisible search; this is of particular importance as the LHC is shut down as of mid-February 2013 for two years, so the parked data will be the only available unanalysed data.
+My thesis will focus on searches for Higgs boson decays to invisible final states, particularly those in the VBF channel and the combination of results between channels. I have begun by participating in the analysis of the prompt 2012 data for the VBF channel Higgs to invisible search and performing the combination between the VBF and the two ZH channels. I will now move on to using the parked data from 2012 to update the VBF Higgs to invisible search; this is of particular importance as the LHC is shut down as of mid-February 2013 for two years, so the parked data is the only available unanalysed data.
 
-Depending on the outcome of this work I will also study the impact of the Higgs to invisible searches on the combinations and preparations for analyses after the shutdown.
+Depending on the outcome of this work I will study preparations for analyses after the LHC restarts. I will also perform service work, which is required for continuing authorship in the CMS Collaboration, this will involve working on the computing or calorimetry upgrade of CMS.
 
 
 \begin{thebibliography}{999}
-
+%!!UPDATE
 \bibitem{glashow}S. Glashow, ``Partial-symmetries of weak interactions'', Nucl. Phys. 22 (1961) 579.
 \bibitem{weinberg}S. Weinberg, ``A Model of Leptons'', Phys. Rev. lett. 19 (1967) 1264.
 \bibitem{salam}A. Salam, ``Weak and electromagnetic interactions,'', in: N. Svartholm (Ed.), Elementary Particle Physics: Relativistic Groups and Analyticity, Prodeedings of the Eighth Nobel Symposium, Almquvist and Wiskell, 1968, p. 367.
